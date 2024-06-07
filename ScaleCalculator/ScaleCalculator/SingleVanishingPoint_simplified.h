@@ -6,9 +6,10 @@
 /// 
 /// Region, having one vanishing point
 /// </summary>
-class SingleVanishingPoint_simplified : Region {
+class SingleVanishingPoint_simplified : public Region {
 	LineSegment measure;
 	Point vPoint;
+public:
 	/// <summary>
 	/// Create Region with Single Vanishing Point.
 	/// </summary>
@@ -18,6 +19,6 @@ class SingleVanishingPoint_simplified : Region {
 	SingleVanishingPoint_simplified(std::vector<Point> corners, LineSegment measure, Point vPoint);
 
 	// Унаследовано через Region
-	virtual Point buildEndpoint_approximate(Point start, LineSegment direction) override;
-	virtual Point buildEndpoint(Point start, LineSegment direction) override;
+	Point buildEndpoint_approximate(Point start, LineSegment direction) override;
+	Point buildEndpoint(Point start, LineSegment direction) override;
 };

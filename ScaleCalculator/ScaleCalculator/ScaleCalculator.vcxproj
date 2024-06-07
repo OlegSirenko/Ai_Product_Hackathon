@@ -148,6 +148,8 @@
   <ItemGroup>
     <ClInclude Include="DoubleVanishingPoint.h" />
     <ClInclude Include="FlatSurface.h" />
+    <ClInclude Include="json.hpp" />
+    <ClInclude Include="json_fwd.hpp" />
     <ClInclude Include="Measures.h" />
     <ClInclude Include="Region.h" />
     <ClInclude Include="SingleVanishingPoint_simplified.h" />

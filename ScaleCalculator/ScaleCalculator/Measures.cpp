@@ -26,20 +26,6 @@ Line::Line(Point first, Point second)
 
 Line::Line(LineSegment segment) :Line(segment.end, segment.start) {}
 
-//MeasuredDirection::MeasuredDirection(double x_size, double y_size, double length)
-//{
-//    this->x_size = x_size;
-//    this->y_size = y_size;
-//    this->length = length;
-//}
-//
-//MeasuredDirection::MeasuredDirection(Point start, Point end, double length)
-//{
-//    this->x_size = end.x - start.x;
-//    this->y_size = end.y - start.y;
-//    this->length = length;
-//}
-
 LineSegment::LineSegment(Point start, Point end, double length)
 {
     this->start = start;
@@ -72,4 +58,10 @@ LineSegment LineSegment::BuildCroppedSegmentFromPoint(Point start, double pixelL
     return segment;
 }
 
-// nlohmann::json
+Line BuildPerpendicular(Line line, Point point)
+{
+    Line perpendicular;
+    perpendicular.a = -1 / line.a;
+    perpendicular.b = (point.x / line.a + point.y);
+    return perpendicular;
+}

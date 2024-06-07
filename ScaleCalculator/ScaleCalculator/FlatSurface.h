@@ -4,8 +4,9 @@
 /// <summary>
 /// Region without any vanishing points.
 /// </summary>
-class FlatSurface :Region {
+class FlatSurface : public Region {
 	LineSegment measure;
+public:
 	FlatSurface(const std::vector<Point>& corners, LineSegment measure);
 
 	// Унаследовано через Region

@@ -41,29 +41,4 @@ struct LineSegment {
 	LineSegment BuildCroppedSegmentFromPoint(Point start,double pixelLength);
 };
 
-
-///// <summary>
-///// Represents a free vector and its corresponding length in centimeters.
-///// </summary>
-//const struct MeasuredDirection {
-//    double x_size;
-//	double y_size;
-//	double length;
-//
-//	/// <summary>
-//	/// Construct a MeasuredDirection.
-//	/// </summary>
-//	/// <param name="x_size">X difference between vector end and start.</param>
-//	/// <param name="y_size">Y difference between vector end and start.</param>
-//	/// <param name="length">Length of vector in centimeters.</param>
-//	MeasuredDirection(double x_size, double y_size, double length);
-//
-//	/// <summary>
-//	/// Construct a MeasuredDirection.
-//	/// </summary>
-//	/// <param name="x_size">X difference between vector end and start.</param>
-//	/// <param name="y_size">Y difference between vector end and start.</param>
-//	/// <param name="length">Length of vector in centimeters.</param>
-//	MeasuredDirection(Point start, Point end, double length);
-//};
-
+Line BuildPerpendicular(Line line, Point point);

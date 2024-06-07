@@ -6,7 +6,10 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Line line;
+    line.a = 2;
+    auto d = BuildPerpendicular(line, Point(0, 5));
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

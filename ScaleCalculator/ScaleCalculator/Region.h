@@ -5,7 +5,7 @@
 
 enum surface_type {
 	undefined = 0,
-	floor = 1,
+	flooring = 1,
 	wall = 2,
 	ceiling = 3
 };
@@ -14,9 +14,9 @@ enum surface_type {
 /// Image region where objects can be scaled correctly.
 /// </summary>
 class Region {
+	std::vector<Point> corners;
 public:
 	surface_type surface{ undefined };
-	std::vector<Point> corners;
 
 	/// <summary>
 	/// Create Region.
