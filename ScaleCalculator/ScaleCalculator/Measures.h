@@ -12,7 +12,6 @@ struct Point {
 	double x{0}, y{0};
 	Point() = default;
 	Point(int x, int y);
-	static Point calculateIntersection(Line first, Line second);
 };
 
 /// <summary>
@@ -42,3 +41,4 @@ struct LineSegment {
 };
 
 Line BuildPerpendicular(Line line, Point point);
+Point CalculateIntersection(Line first, Line second);

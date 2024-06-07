@@ -3,13 +3,13 @@
 
 #include <iostream>
 #include "Measures.h"
+#include "SingleVanishingPoint_simplified.h"
 
 int main()
 {
-    Line line;
-    line.a = 2;
-    auto d = BuildPerpendicular(line, Point(0, 5));
+    SingleVanishingPoint_simplified vp({},LineSegment(Point(1343,428), Point(1343,1002), 300), Point(365, 770));
 
+    auto d = vp.buildEndpoint_approximate(Point(1784, 1108), LineSegment(Point(0,10), Point(0,0), 300));
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

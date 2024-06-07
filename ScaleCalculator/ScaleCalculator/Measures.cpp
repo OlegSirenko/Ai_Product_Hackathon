@@ -6,7 +6,7 @@ Point::Point(int x, int y) {
 	this->y = y;
 }
 
-Point Point::calculateIntersection(Line first, Line second)
+Point CalculateIntersection(Line first, Line second)
 {
     Point intersection;
     intersection.x = (first.b - second.b) / (second.a - first.a);
@@ -18,7 +18,10 @@ Line::Line(Point first, Point second)
 {
     //костыль чтобы работало с вертикальными прямыми, нужно убрать
     if (first.x == second.x) {
-        second.x += 0.00001;
+        second.x += 0.001;
+    }
+    if (first.y == second.y) {
+        second.y += 0.001;
     }
     this->a = (second.y - first.y) / (second.x - first.x);
     this->b = (second.x * first.y - first.x * second.y) / (second.x - first.x);
@@ -35,7 +38,7 @@ LineSegment::LineSegment(Point start, Point end, double length)
 
 double LineSegment::GetPixelLength()
 {
-    return sqrt(pow(end.x - start.x,2)+pow(end.y - end.y,2));
+    return sqrt(pow(end.x - start.x,2)+pow(end.y - start.y,2));
 }
 
 Point LineSegment::GetUnitVectorEnd()
