@@ -13,36 +13,52 @@ DoubleVanishingPoint::DoubleVanishingPoint(std::vector<Point> corners, LineSegme
 	this->vPoint_two = vPoint_two;
 
 	this->measure_one = measure_one;
-	this->measure_two = BuildPerpendicular();
+	this->measure_two = measure_two;
 
 	coefficient_one = CalculateCoefficient(measure_one, vPoint_one);
 	coefficient_two = CalculateCoefficient(measure_two, vPoint_two);
 }
 
+double CalculateProjectionLength(Point start, Point end, Line measure, double coefficient, Point vPoint, Point ortagonalVPoint) {
+	start = CalculateIntersection(measure, Line(start, ortagonalVPoint));
+	end = CalculateIntersection(measure, Line(end, ortagonalVPoint));
+
+	auto startDist = CalculateDistance(start, vPoint);
+	auto endDist = CalculateDistance(end, vPoint);
+
+	return coefficient / startDist - coefficient / endDist;
+}
+
+double DoubleVanishingPoint::CalculateSegmentLength(Point start, Point end) {
+	return sqrt(pow(CalculateProjectionLength(start, end, Line(measure_one), coefficient_one, vPoint_one, vPoint_two), 2)
+		      + pow(CalculateProjectionLength(start, end, Line(measure_two), coefficient_two, vPoint_two, vPoint_one), 2));
+}
+
 Point DoubleVanishingPoint::buildEndpoint_approximate(Point start, LineSegment direction)
 {
-	return direction.BuildCroppedSegmentFromPoint(start, CalculateDistance(start, buildEndpoint(start, direction))).end;
+	//i'm tired, binary search will work for now....
+	auto horizontPoint = CalculateIntersection(Line(direction.BuildCroppedSegmentFromPoint(start, 1)), Line(vPoint_one, vPoint_two));
+	direction = direction.BuildCroppedSegmentFromPoint(start, CalculateDistance(start, horizontPoint));
+
+	Point binaryStart = direction.start, binaryEnd = direction.end;
+	
+	while (true) {
+		Point binaryCenter((binaryEnd.x + binaryStart.x)/2, (binaryEnd.y + binaryStart.y)/2);
+		auto currentLength = CalculateSegmentLength(start, binaryCenter);
+		if (abs(direction.length - currentLength) < 0.03 * direction.length || CalculateDistance(binaryStart, binaryEnd) < 1) {
+			return binaryCenter;
+		}
+		if (currentLength > direction.length) {
+			binaryEnd = binaryCenter;
+		}
+		else {
+			binaryStart = binaryCenter;
+		}
+	}
 }
 
-Point BuildMeasuredProjection(Point start, LineSegment direction, Point vPoint, double coefficient, LineSegment measure, Point vPointOrtagonal) {
-	LineSegment directionProjection(
-		CalculateIntersection(Line(direction.start, vPointOrtagonal), Line(measure)),
-		CalculateIntersection(Line(direction.end, vPointOrtagonal), Line(measure)), 0);
-	double projectionRatio = directionProjection.GetPixelLength() / direction.GetPixelLength();
-	directionProjection.length = direction.length * projectionRatio;
-
-	direction = direction.BuildCroppedSegmentFromPoint(start, 1);
-
-	auto distanceToStartpoint = CalculateDistance(vPoint, directionProjection.start);
-	auto distanceToEndpoint = coefficient / (directionProjection.length + coefficient / CalculateDistance(vPoint, directionProjection.start));
-	return directionProjection.BuildCroppedSegmentFromPoint(directionProjection.start, distanceToEndpoint - distanceToStartpoint).end;
-}
 
 Point DoubleVanishingPoint::buildEndpoint(Point start, LineSegment direction)
 {	
-	auto endpoint1 = BuildMeasuredProjection(start, direction, vPoint_one, coefficient_one, measure_one, vPoint_two);
-	auto endpoint2 = BuildMeasuredProjection(start, direction, vPoint_two, coefficient_two, measure_two, vPoint_one);
-
-	auto result = CalculateIntersection(Line(endpoint1, vPoint_two), Line(endpoint2, vPoint_one));
-	return result;
+	throw "not implemented";
 }
