@@ -15,9 +15,9 @@ namespace MetadataGenerator
     {
         RegionList RegionList = new RegionList();
         TableItem Item = new TableItem();
-        List<CPPclasses.Point> currentChanging;
-        int currentChangingIndex;
-        int currentChangingMaxIndex;
+        List<CPPclasses.Point> currentChanging = new List<CPPclasses.Point>() {new CPPclasses.Point(1,1) };
+        int currentChangingIndex = 0;
+        int currentChangingMaxIndex = 1;
 
         Graphics lines;
 
@@ -216,7 +216,7 @@ namespace MetadataGenerator
         }
 
         private void SaveJson_Click(object sender, EventArgs e)
-        {
+        { 
             RegionList.SerializeThis();
             RegionList = new RegionList();
             ClearItem();

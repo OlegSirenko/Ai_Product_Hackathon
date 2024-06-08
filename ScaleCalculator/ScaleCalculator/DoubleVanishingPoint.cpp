@@ -66,4 +66,7 @@ void DoubleVanishingPoint::Deserialize(const json& segment)
 	this->measure_two.Deserialize(segment["measure_two"]);
 	this->vPoint_one.Deserialize(segment["vPoint_one"]);
 	this->vPoint_two.Deserialize(segment["vPoint_two"]);
+
+	this->coefficient_one = CalculateCoefficient(measure_one, vPoint_one);
+	this->coefficient_two = CalculateCoefficient(measure_two, vPoint_two);
 }
