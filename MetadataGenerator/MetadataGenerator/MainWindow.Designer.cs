@@ -287,6 +287,11 @@ namespace MetadataGenerator
             // lengthBox
             // 
             this.lengthBox.Location = new System.Drawing.Point(111, 5);
+            this.lengthBox.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.lengthBox.Name = "lengthBox";
             this.lengthBox.Size = new System.Drawing.Size(62, 23);
             this.lengthBox.TabIndex = 1;
