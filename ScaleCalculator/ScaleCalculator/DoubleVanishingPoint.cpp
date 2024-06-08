@@ -56,3 +56,14 @@ Point DoubleVanishingPoint::buildEndpoint_approximate(Point start, LineSegment d
 		}
 	}
 }
+
+void DoubleVanishingPoint::Deserialize(const json& segment)
+{
+	this->coefficient_one = segment["coefficient_one"];
+	this->coefficient_two = segment["coefficient_two"];
+
+	this->measure_one.Deserialize(segment["measure_one"]);
+	this->measure_two.Deserialize(segment["measure_two"]);
+	this->vPoint_one.Deserialize(segment["vPoint_one"]);
+	this->vPoint_two.Deserialize(segment["vPoint_two"]);
+}

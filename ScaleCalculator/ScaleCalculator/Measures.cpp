@@ -1,6 +1,29 @@
 #include "Measures.h"
 #include <cmath>
 
+
+
+void Point::Deserialize(const json& segment)
+{
+    this->x = segment["x"];
+    this->y = segment["y"];
+}
+
+void Line::Deserialize(const json& segment)
+{
+    this->a = segment["x"];
+    this->b = segment["x"];
+}
+
+void LineSegment::Deserialize(const json& segment)
+{
+    this->start.Deserialize(segment["start"]);
+    this->end.Deserialize(segment["end"]);
+    this->length = segment["length"];
+}
+
+
+
 Point::Point(double x, double y) {
 	this->x = x;
 	this->y = y;

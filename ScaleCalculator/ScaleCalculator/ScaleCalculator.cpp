@@ -5,6 +5,7 @@
 #include "Measures.h"
 #include "SingleVanishingPoint_simplified.h"
 #include "DoubleVanishingPoint.h"
+#include "Deserializer.h"
 
 int main()
 {
@@ -12,8 +13,10 @@ int main()
 
     //auto d = vp.buildEndpoint_approximate(Point(1784, 1108), LineSegment(Point(0,10), Point(0,0), 300));
 
-    DoubleVanishingPoint dp({}, LineSegment(Point(500, 1055), Point(1115, 1015), 280), Point(5144, 766), LineSegment(Point(1816, 1135), Point(2172, 1226), 70), Point(365, 770));
-    auto d = dp.buildEndpoint_approximate(Point(100, 1500), LineSegment(Point(0, 10), Point(0, 0), 100));
+    //DoubleVanishingPoint dp({}, LineSegment(Point(500, 1055), Point(1115, 1015), 280), Point(5144, 766), LineSegment(Point(1816, 1135), Point(2172, 1226), 70), Point(365, 770));
+    auto regions = DeserializeImageConfiguration("D:\\undefined.json");
+
+    auto d = regions[0]->buildEndpoint_approximate(Point(100, 1500), LineSegment(Point(0, 10), Point(0, 0), 100));
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

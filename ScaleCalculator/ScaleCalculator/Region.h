@@ -34,6 +34,8 @@ public:
 	/// <returns></returns>
 	virtual Point buildEndpoint_approximate(Point start, LineSegment direction) = 0;
 
+	virtual void Deserialize(const json& segment) = 0;
+
 	/// <summary>
 	/// returns four corners of convex quadrilateral, limiting this region.
 	/// </summary>

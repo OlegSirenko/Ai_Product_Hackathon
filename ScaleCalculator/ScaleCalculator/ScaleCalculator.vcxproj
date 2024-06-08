@@ -147,6 +147,7 @@
     <ClCompile Include="SingleVanishingPoint_simplified.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Deserializer.h" />
     <ClInclude Include="DoubleVanishingPoint.h" />
     <ClInclude Include="FlatSurface.h" />
     <ClInclude Include="json.hpp" />

@@ -22,3 +22,9 @@ Point SingleVanishingPoint_simplified::buildEndpoint_approximate(Point start, Li
 
 	return CalculateIntersection(dirLine, Line(measuredSegment.end, vPoint));
 }
+
+void SingleVanishingPoint_simplified::Deserialize(const json& segment)
+{
+	this->measure.Deserialize(segment["measure"]);
+	this->vPoint.Deserialize(segment["vPoint"]);
+}

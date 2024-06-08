@@ -22,4 +22,7 @@ public:
 
 	// Унаследовано через Region
 	Point buildEndpoint_approximate(Point start, LineSegment direction) override;
+
+	// Inherited via Region
+	void Deserialize(const json& segment) override;
 };

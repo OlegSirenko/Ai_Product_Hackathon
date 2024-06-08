@@ -12,5 +12,8 @@ public:
 	FlatSurface() = default;
 
 	// Унаследовано через Region
-	virtual Point buildEndpoint_approximate(Point start, LineSegment direction) override;
+	Point buildEndpoint_approximate(Point start, LineSegment direction) override;
+
+	// Inherited via Region
+	void Deserialize(const json& segment) override;
 };

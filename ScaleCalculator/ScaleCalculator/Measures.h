@@ -1,9 +1,10 @@
  #pragma once
+#include "json.hpp"
+using json = nlohmann::json;
 
 struct Point;
 struct Line;
 struct LineSegment;
-struct MeasuredDirection;
 
 /// <summary>
 /// Coordinates of a point.
@@ -12,6 +13,7 @@ struct Point {
 	double x{0}, y{0};
 	Point() = default;
 	Point(double x, double y);
+	void Deserialize(const json& segment);
 };
 
 /// <summary>
@@ -23,6 +25,7 @@ struct Line
 	Line() = default;
 	Line(Point first, Point second);
 	Line(LineSegment segment);
+	void Deserialize(const json &segment);
 };
 
 /// <summary>
@@ -38,6 +41,7 @@ struct LineSegment {
 	double GetPixelLength();
 	Point GetUnitVectorEnd();
 	LineSegment BuildCroppedSegmentFromPoint(Point start,double pixelLength);
+	void Deserialize(const json& segment);
 };
 
 Line BuildPerpendicular(Line line, Point point);
