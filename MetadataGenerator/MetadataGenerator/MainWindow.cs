@@ -19,14 +19,60 @@ namespace MetadataGenerator
         int currentChangingIndex;
         int currentChangingMaxIndex;
 
+        Graphics lines;
+
+        int imageX = 0;
+        int imageY = 0;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            lines = Scene.CreateGraphics();
+        }
+
+        private void DrawLine(CPPclasses.Point start, CPPclasses.Point end, Color color)
+        {
+            
+            Pen pen1 = new Pen(color, 2);
+            lines.DrawLine(pen1, 
+                (int)(start.x / Scene.Image.Width * Scene.Width), 
+                (int)(start.y / Scene.Image.Height * Scene.Height), 
+                (int)(end.x / Scene.Image.Width * Scene.Width), 
+                (int)(end.y / Scene.Image.Height * Scene.Height));
+        }
+
+        private void DrawLines()
+        {
+            lines.Clear(Color.Transparent);
+            lines = Scene.CreateGraphics();
+            lines.DrawImage(Scene.Image, 0, 0, Scene.Width, (int)((double)Scene.Image.Height / Scene.Image.Width* Scene.Width));
+
+            for (int i = 0; i< 4; i++)
+            {
+                DrawLine(Item.corners[i], Item.corners[(i + 1) % 4], Color.Gray);
+            }
+
+            Dictionary<List<CPPclasses.Point>, Color> toDraw = new Dictionary<List<CPPclasses.Point>, Color>();
+            toDraw[Item.measure] = Color.SandyBrown;
+            toDraw[Item.singleParallel1] = Color.LightCoral;
+            toDraw[Item.singleParallel2] = Color.Tomato;
+            toDraw[Item.measure_one] = Color.SpringGreen;
+            toDraw[Item.parallel_one] = Color.Green;
+            toDraw[Item.measure_two] = Color.RoyalBlue;
+            toDraw[Item.parallel_two] = Color.SteelBlue;
+
+            foreach (var draw in toDraw)
+            {
+                DrawLine(draw.Key[0], draw.Key[1], draw.Value);
+            }
         }
 
         private void Scene_MouseMove(object sender, MouseEventArgs e)
         {
-            CursorPositionLabel.Text = Scene.Image==null?"0 X 0":(int)((double)Scene.Image.Width/(double)Scene.Width*e.X) + " X " + (int)((double)Scene.Image.Height / (double)Scene.Height * e.Y);
+            imageX = Scene.Image == null ? 0 : (int)((double)Scene.Image.Width / (double)Scene.Width * e.X);
+            imageY = Scene.Image == null ? 0 : (int)((double)Scene.Image.Height / (double)Scene.Height * e.Y);
+            CursorPositionLabel.Text = imageX + " X " + imageY;
         }
 
         private void LoadImage_Click(object sender, EventArgs e)
@@ -36,6 +82,17 @@ namespace MetadataGenerator
             string filename = OpenFileDialog.FileName;
             RegionList.Name = OpenFileDialog.SafeFileName.Substring(0, OpenFileDialog.SafeFileName.IndexOf('.'));
             Scene.Image = Image.FromFile(filename);
+            DrawLines();
+        }
+
+        private void ClearItem()
+        {
+            Item = new TableItem();
+            regionCombo.Text = "0";
+            typeCombo.Text = "0";
+            lengthBox.Value = 0;
+            length_oneBox.Value = 0;
+            length_twoButton.Value = 0;
         }
 
         private void panel8_Paint(object sender, PaintEventArgs e)
@@ -45,7 +102,7 @@ namespace MetadataGenerator
 
         private void regionCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if((string)regionCombo.SelectedItem == "0")
+            if ((string)regionCombo.SelectedItem == "0")
             {
                 Item.amount = 0;
                 zeroPanel.Enabled = true;
@@ -125,7 +182,7 @@ namespace MetadataGenerator
 
         private void typeCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if((string)typeCombo.SelectedItem == "undefined")
+            if ((string)typeCombo.SelectedItem == "undefined")
             {
                 Item.surface = surface_type.undefined;
             }
@@ -156,6 +213,59 @@ namespace MetadataGenerator
         private void length_twoButton_ValueChanged(object sender, EventArgs e)
         {
             Item.length_two = (double)length_twoButton.Value;
+        }
+
+        private void SaveJson_Click(object sender, EventArgs e)
+        {
+            RegionList.SerializeThis();
+            RegionList = new RegionList();
+            ClearItem();
+            MessageBox.Show("json saved");
+        }
+
+        private void SaveRegion_Click(object sender, EventArgs e)
+        {
+            if (Item.amount == 0)
+            {
+                RegionList.FlatSurfaces.Add(new FlatSurface(
+                    Item.corners,
+                    new LineSegment(Item.measure[0], Item.measure[1], Item.length)
+                    ));
+                MessageBox.Show("0-point surface added");
+            }
+            if (Item.amount == 1)
+            {
+                RegionList.SingleVanishingPoints.Add(new SingleVanishingPoint_simplified(
+                    Item.corners,
+                    new LineSegment(Item.measure[0], Item.measure[1], Item.length),
+                    Measures.CalculateIntersection(new Line(Item.singleParallel1[0], Item.singleParallel1[1]),
+                                                   new Line(Item.singleParallel2[0], Item.singleParallel2[1]))
+                    ));
+                MessageBox.Show("1-point surface added");
+            }
+            if (Item.amount == 2)
+            {
+                RegionList.DoubleVanishingPoints.Add(new DoubleVanishingPoint(
+                    Item.corners,
+                    new LineSegment(Item.measure_one[0], Item.measure_one[1], Item.length_one),
+                    Measures.CalculateIntersection(new Line(Item.measure_one[0], Item.measure_one[1]),
+                                                   new Line(Item.parallel_one[0], Item.parallel_one[1])),
+                    new LineSegment(Item.measure_two[0], Item.measure_two[1], Item.length_two),
+                    Measures.CalculateIntersection(new Line(Item.measure_two[0], Item.measure_two[1]),
+                                                   new Line(Item.parallel_two[0], Item.parallel_two[1]))
+                    ));
+                MessageBox.Show("2-point surface added");
+            }
+            ClearItem();
+        }
+
+        private void Scene_Click(object sender, EventArgs e)
+        {
+            currentChanging[currentChangingIndex].x = imageX;
+            currentChanging[currentChangingIndex].y = imageY;
+            currentChangingIndex += 1;
+            currentChangingIndex %= currentChangingMaxIndex;
+            DrawLines();
         }
     }
 }

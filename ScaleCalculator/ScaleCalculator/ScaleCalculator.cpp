@@ -11,7 +11,7 @@ int main()
 {
     auto regions = DeserializeImageConfiguration("D:\\undefined.json");
 
-    auto d = regions[0]->buildEndpoint_approximate(Point(100, 1500), LineSegment(Point(0, 10), Point(0, 0), 100));
+    auto d = regions[0]->buildEndpoint_approximate(Point(1000, 1200), LineSegment(Point(0, 10), Point(0, 0), 100));
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

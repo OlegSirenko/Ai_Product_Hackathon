@@ -31,6 +31,7 @@ namespace MetadataGenerator
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.Scene = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.SaveRegion = new System.Windows.Forms.Button();
             this.doublePanel = new System.Windows.Forms.Panel();
@@ -89,6 +90,7 @@ namespace MetadataGenerator
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.Controls.Add(this.Scene);
+            this.splitContainer1.Panel1.Controls.Add(this.panel6);
             // 
             // splitContainer1.Panel2
             // 
@@ -114,9 +116,19 @@ namespace MetadataGenerator
             this.Scene.Name = "Scene";
             this.Scene.Size = new System.Drawing.Size(481, 638);
             this.Scene.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Scene.TabIndex = 0;
+            this.Scene.TabIndex = 2;
             this.Scene.TabStop = false;
+            this.Scene.Click += new System.EventHandler(this.Scene_Click);
             this.Scene.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Scene_MouseMove);
+            // 
+            // panel6
+            // 
+            this.panel6.AutoSize = true;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(481, 0);
+            this.panel6.TabIndex = 1;
             // 
             // panel9
             // 
@@ -137,6 +149,7 @@ namespace MetadataGenerator
             this.SaveRegion.TabIndex = 0;
             this.SaveRegion.Text = "Save Region";
             this.SaveRegion.UseVisualStyleBackColor = true;
+            this.SaveRegion.Click += new System.EventHandler(this.SaveRegion_Click);
             // 
             // doublePanel
             // 
@@ -157,27 +170,34 @@ namespace MetadataGenerator
             // 
             // parallel_twoButton
             // 
+            this.parallel_twoButton.BackColor = System.Drawing.Color.SteelBlue;
             this.parallel_twoButton.Location = new System.Drawing.Point(179, 35);
             this.parallel_twoButton.Name = "parallel_twoButton";
             this.parallel_twoButton.Size = new System.Drawing.Size(100, 23);
             this.parallel_twoButton.TabIndex = 8;
             this.parallel_twoButton.Text = "параллель";
-            this.parallel_twoButton.UseVisualStyleBackColor = true;
+            this.parallel_twoButton.UseVisualStyleBackColor = false;
             this.parallel_twoButton.Click += new System.EventHandler(this.parallel_twoButton_Click);
             // 
             // parallel_oneButton
             // 
+            this.parallel_oneButton.BackColor = System.Drawing.Color.Green;
             this.parallel_oneButton.Location = new System.Drawing.Point(179, 6);
             this.parallel_oneButton.Name = "parallel_oneButton";
             this.parallel_oneButton.Size = new System.Drawing.Size(100, 23);
             this.parallel_oneButton.TabIndex = 7;
             this.parallel_oneButton.Text = "параллель";
-            this.parallel_oneButton.UseVisualStyleBackColor = true;
+            this.parallel_oneButton.UseVisualStyleBackColor = false;
             this.parallel_oneButton.Click += new System.EventHandler(this.parallel_oneButton_Click);
             // 
             // length_twoButton
             // 
             this.length_twoButton.Location = new System.Drawing.Point(111, 37);
+            this.length_twoButton.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.length_twoButton.Name = "length_twoButton";
             this.length_twoButton.Size = new System.Drawing.Size(62, 23);
             this.length_twoButton.TabIndex = 6;
@@ -186,6 +206,11 @@ namespace MetadataGenerator
             // length_oneBox
             // 
             this.length_oneBox.Location = new System.Drawing.Point(111, 8);
+            this.length_oneBox.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.length_oneBox.Name = "length_oneBox";
             this.length_oneBox.Size = new System.Drawing.Size(62, 23);
             this.length_oneBox.TabIndex = 2;
@@ -193,22 +218,24 @@ namespace MetadataGenerator
             // 
             // measure_twoButton
             // 
+            this.measure_twoButton.BackColor = System.Drawing.Color.RoyalBlue;
             this.measure_twoButton.Location = new System.Drawing.Point(5, 37);
             this.measure_twoButton.Name = "measure_twoButton";
             this.measure_twoButton.Size = new System.Drawing.Size(100, 23);
             this.measure_twoButton.TabIndex = 5;
             this.measure_twoButton.Text = "измеритель";
-            this.measure_twoButton.UseVisualStyleBackColor = true;
+            this.measure_twoButton.UseVisualStyleBackColor = false;
             this.measure_twoButton.Click += new System.EventHandler(this.measure_twoButton_Click);
             // 
             // measure_oneButton
             // 
+            this.measure_oneButton.BackColor = System.Drawing.Color.SpringGreen;
             this.measure_oneButton.Location = new System.Drawing.Point(5, 8);
             this.measure_oneButton.Name = "measure_oneButton";
             this.measure_oneButton.Size = new System.Drawing.Size(100, 23);
             this.measure_oneButton.TabIndex = 4;
             this.measure_oneButton.Text = "измеритель";
-            this.measure_oneButton.UseVisualStyleBackColor = true;
+            this.measure_oneButton.UseVisualStyleBackColor = false;
             this.measure_oneButton.Click += new System.EventHandler(this.measure_oneButton_Click);
             // 
             // onePanel
@@ -225,22 +252,24 @@ namespace MetadataGenerator
             // 
             // singleParallel2Button
             // 
+            this.singleParallel2Button.BackColor = System.Drawing.Color.Tomato;
             this.singleParallel2Button.Location = new System.Drawing.Point(5, 37);
             this.singleParallel2Button.Name = "singleParallel2Button";
             this.singleParallel2Button.Size = new System.Drawing.Size(100, 23);
             this.singleParallel2Button.TabIndex = 3;
             this.singleParallel2Button.Text = "параллель";
-            this.singleParallel2Button.UseVisualStyleBackColor = true;
+            this.singleParallel2Button.UseVisualStyleBackColor = false;
             this.singleParallel2Button.Click += new System.EventHandler(this.singleParallel2Button_Click);
             // 
             // singleParallel1Button
             // 
+            this.singleParallel1Button.BackColor = System.Drawing.Color.LightCoral;
             this.singleParallel1Button.Location = new System.Drawing.Point(5, 8);
             this.singleParallel1Button.Name = "singleParallel1Button";
             this.singleParallel1Button.Size = new System.Drawing.Size(100, 23);
             this.singleParallel1Button.TabIndex = 2;
             this.singleParallel1Button.Text = "параллель";
-            this.singleParallel1Button.UseVisualStyleBackColor = true;
+            this.singleParallel1Button.UseVisualStyleBackColor = false;
             this.singleParallel1Button.Click += new System.EventHandler(this.singleParallel1Button_Click);
             // 
             // zeroPanel
@@ -265,12 +294,13 @@ namespace MetadataGenerator
             // 
             // measureButton
             // 
+            this.measureButton.BackColor = System.Drawing.Color.SandyBrown;
             this.measureButton.Location = new System.Drawing.Point(5, 7);
             this.measureButton.Name = "measureButton";
             this.measureButton.Size = new System.Drawing.Size(100, 23);
             this.measureButton.TabIndex = 0;
             this.measureButton.Text = "измеритель";
-            this.measureButton.UseVisualStyleBackColor = true;
+            this.measureButton.UseVisualStyleBackColor = false;
             this.measureButton.Click += new System.EventHandler(this.measureButton_Click);
             // 
             // panel5
@@ -383,6 +413,7 @@ namespace MetadataGenerator
             this.SaveJson.TabIndex = 1;
             this.SaveJson.Text = "Save Json";
             this.SaveJson.UseVisualStyleBackColor = true;
+            this.SaveJson.Click += new System.EventHandler(this.SaveJson_Click);
             // 
             // LoadImage
             // 
@@ -427,6 +458,7 @@ namespace MetadataGenerator
             this.Name = "MainWindow";
             this.Text = "MainWindow";
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -454,7 +486,6 @@ namespace MetadataGenerator
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.PictureBox Scene;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label CursorPositionLabel;
         private System.Windows.Forms.Panel panel2;
@@ -484,5 +515,7 @@ namespace MetadataGenerator
         private System.Windows.Forms.Button measure_twoButton;
         private System.Windows.Forms.Button measure_oneButton;
         private System.Windows.Forms.Button SaveRegion;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox Scene;
     }
 }

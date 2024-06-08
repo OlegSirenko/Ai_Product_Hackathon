@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using CPPclasses;
 
 
@@ -19,8 +20,11 @@ namespace MetadataGenerator
 
         public void SerializeThis()
         {
-            using FileStream createStream = File.Create(Name+".json");
-            JsonSerializer.SerializeAsync(createStream, this);
+            using (FileStream createStream = File.Create(Name + ".json"))
+            {
+                JsonSerializer.SerializeAsync(createStream, this).Wait();
+            }
+            
         }
     }
 }
