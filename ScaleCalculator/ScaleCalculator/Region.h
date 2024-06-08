@@ -24,6 +24,8 @@ public:
 	/// <param name="corners">Corners, that limit Region</param>
 	Region(const std::vector<Point> &corners);
 
+	Region() = default;
+
 	/// <summary>
 	/// Calculates approximate endpoint, keeping resulting vector parallel to direction.
 	/// </summary>

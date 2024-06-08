@@ -18,6 +18,8 @@ public:
 	/// <param name="vPoint">Vanishing point</param>
 	SingleVanishingPoint_simplified(std::vector<Point> corners, LineSegment measure, Point vPoint);
 
+	SingleVanishingPoint_simplified() = default;
+
 	// Унаследовано через Region
 	Point buildEndpoint_approximate(Point start, LineSegment direction) override;
 	Point buildEndpoint(Point start, LineSegment direction) override;

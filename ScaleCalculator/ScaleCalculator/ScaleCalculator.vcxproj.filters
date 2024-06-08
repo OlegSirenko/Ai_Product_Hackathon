@@ -30,6 +30,9 @@
     <ClCompile Include="SingleVanishingPoint_simplified.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="DoubleVanishingPoint.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Measures.h">

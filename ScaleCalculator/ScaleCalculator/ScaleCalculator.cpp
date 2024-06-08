@@ -4,12 +4,16 @@
 #include <iostream>
 #include "Measures.h"
 #include "SingleVanishingPoint_simplified.h"
+#include "DoubleVanishingPoint.h"
 
 int main()
 {
-    SingleVanishingPoint_simplified vp({},LineSegment(Point(1343,428), Point(1343,1002), 300), Point(365, 770));
+    //SingleVanishingPoint_simplified vp({},LineSegment(Point(1343,428), Point(1343,1002), 300), Point(365, 770));
 
-    auto d = vp.buildEndpoint_approximate(Point(1784, 1108), LineSegment(Point(0,10), Point(0,0), 300));
+    //auto d = vp.buildEndpoint_approximate(Point(1784, 1108), LineSegment(Point(0,10), Point(0,0), 300));
+
+    DoubleVanishingPoint dp({}, LineSegment(Point(500, 1055), Point(1115, 1015), 280), Point(5144, 766), LineSegment(Point(1816, 1135), Point(2172, 1226), 90), Point(365, 770));
+    auto d = dp.buildEndpoint_approximate(Point(1000, 1200), LineSegment(Point(0, 10), Point(10, 0), 100));
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

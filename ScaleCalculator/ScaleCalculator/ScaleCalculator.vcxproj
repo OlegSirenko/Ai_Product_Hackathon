@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DoubleVanishingPoint.cpp" />
     <ClCompile Include="FlatSurface.cpp" />
     <ClCompile Include="Measures.cpp" />
     <ClCompile Include="Region.cpp" />

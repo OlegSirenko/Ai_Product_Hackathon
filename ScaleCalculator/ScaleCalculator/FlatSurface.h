@@ -9,6 +9,8 @@ class FlatSurface : public Region {
 public:
 	FlatSurface(const std::vector<Point>& corners, LineSegment measure);
 
+	FlatSurface() = default;
+
 	// Унаследовано через Region
 	virtual Point buildEndpoint_approximate(Point start, LineSegment direction) override;
 	virtual Point buildEndpoint(Point start, LineSegment direction) override;

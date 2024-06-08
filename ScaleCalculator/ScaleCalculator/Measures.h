@@ -42,3 +42,4 @@ struct LineSegment {
 
 Line BuildPerpendicular(Line line, Point point);
 Point CalculateIntersection(Line first, Line second);
+double CalculateDistance(Point start, Point end);

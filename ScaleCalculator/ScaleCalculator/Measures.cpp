@@ -6,14 +6,6 @@ Point::Point(int x, int y) {
 	this->y = y;
 }
 
-Point CalculateIntersection(Line first, Line second)
-{
-    Point intersection;
-    intersection.x = (first.b - second.b) / (second.a - first.a);
-    intersection.y = first.a * intersection.x + first.b;
-    return intersection;
-}
-
 Line::Line(Point first, Point second)
 {
     //костыль чтобы работало с вертикальными прямыми, нужно убрать
@@ -67,4 +59,17 @@ Line BuildPerpendicular(Line line, Point point)
     perpendicular.a = -1 / line.a;
     perpendicular.b = (point.x / line.a + point.y);
     return perpendicular;
+}
+
+Point CalculateIntersection(Line first, Line second)
+{
+    Point intersection;
+    intersection.x = (first.b - second.b) / (second.a - first.a);
+    intersection.y = first.a * intersection.x + first.b;
+    return intersection;
+}
+
+double CalculateDistance(Point start, Point end)
+{
+    return sqrt(pow(end.x - start.x, 2) + pow(end.y - start.y, 2));
 }
