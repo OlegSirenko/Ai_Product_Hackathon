@@ -12,7 +12,7 @@ namespace MetadataGenerator
 {
     public class RegionList
     {
-        string Name { get; set; } = "undefined";
+        public string Name { get; set; } = "undefined";
         public List<FlatSurface> FlatSurfaces { get; set; } = new();
         public List<SingleVanishingPoint_simplified> SingleVanishingPoints { get; set; } = new();
         public List<DoubleVanishingPoint> DoubleVanishingPoints { get; set; } = new();

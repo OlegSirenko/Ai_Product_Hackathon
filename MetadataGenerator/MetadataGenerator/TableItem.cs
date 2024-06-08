@@ -9,7 +9,7 @@ namespace MetadataGenerator
 {
     public class TableItem
     {
-        int amount = 0;
+        public int amount = 0;
         public List<Point> corners = new List<Point>() { new Point(), new Point(), new Point(), new Point() };
         public surface_type surface = surface_type.undefined;
         public List<Point> singleParallel1 = getVector();
