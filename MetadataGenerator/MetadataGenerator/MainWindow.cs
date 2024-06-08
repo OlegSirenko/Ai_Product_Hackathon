@@ -29,5 +29,15 @@ namespace MetadataGenerator
             string filename = OpenFileDialog.FileName;
             Scene.Image = Image.FromFile(filename);
         }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void measureButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
