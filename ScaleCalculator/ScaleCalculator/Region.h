@@ -33,14 +33,6 @@ public:
 	/// <param name="direction"></param>
 	/// <returns></returns>
 	virtual Point buildEndpoint_approximate(Point start, LineSegment direction) = 0;
-	/// <summary>
-	/// USE BUILDENDPOINT_APPROXIMATE INSTEAD!!!
-	/// Calculates endpoint for planes with all measures.
-	/// </summary>
-	/// <param name="start"></param>
-	/// <param name="direction"></param>
-	/// <returns></returns>
-	virtual Point buildEndpoint(Point start, LineSegment direction) = 0;
 
 	/// <summary>
 	/// returns four corners of convex quadrilateral, limiting this region.

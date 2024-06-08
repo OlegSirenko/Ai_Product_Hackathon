@@ -22,5 +22,4 @@ public:
 
 	// Унаследовано через Region
 	Point buildEndpoint_approximate(Point start, LineSegment direction) override;
-	Point buildEndpoint(Point start, LineSegment direction) override;
 };

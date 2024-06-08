@@ -56,9 +56,3 @@ Point DoubleVanishingPoint::buildEndpoint_approximate(Point start, LineSegment d
 		}
 	}
 }
-
-
-Point DoubleVanishingPoint::buildEndpoint(Point start, LineSegment direction)
-{	
-	throw "not implemented";
-}

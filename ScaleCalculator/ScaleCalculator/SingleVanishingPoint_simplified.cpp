@@ -22,8 +22,3 @@ Point SingleVanishingPoint_simplified::buildEndpoint_approximate(Point start, Li
 
 	return CalculateIntersection(dirLine, Line(measuredSegment.end, vPoint));
 }
-
-Point SingleVanishingPoint_simplified::buildEndpoint(Point start, LineSegment direction)
-{
-	throw "Not Implemented";
-}
