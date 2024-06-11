@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="imgui"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Users\;CMake Files\Users\TehnokraT\;CMake Files\Users\TehnokraT\.vcpkg-clion\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\scripts\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\scripts\buildsystems\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glew\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\freetype\;CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\zlib\;CMake Files\imgui\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx9">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx9.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx9"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx9/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx9.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx9/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx10">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx10"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx10/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx10/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx11">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx11.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx11"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx11/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx11.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx11/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx12">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx12.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx12"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_directx12/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_directx12.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_directx12/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_opengl3">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_opengl3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_opengl3"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_win32_opengl3/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_win32_opengl3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_win32_opengl3/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_glfw_opengl2">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_glfw_opengl2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_glfw_opengl2"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_glfw_opengl2/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_glfw_opengl2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_glfw_opengl2/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_glfw_opengl3">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_glfw_opengl3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_glfw_opengl3"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_glfw_opengl3/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_glfw_opengl3.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_glfw_opengl3/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_glfw_vulkan">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_glfw_vulkan.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/VulkanSDK/1.3.280.0/Include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_glfw_vulkan"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="example_glfw_vulkan/fast">
+				<Option output="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin/example_glfw_vulkan.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Code/Ai_Product_Hackathon/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_FUNCTIONS=1"/>
+					<Add option="-DIMGUI_DISABLE_OBSOLETE_KEYIO=1"/>
+					<Add option="-DIMGUI_ENABLE_FREETYPE=1"/>
+					<Add option="-DGLFW_DLL"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui"/>
+					<Add directory="C:/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/include"/>
+					<Add directory="D:/Code/Ai_Product_Hackathon/imgui/backends"/>
+					<Add directory="C:/VulkanSDK/1.3.280.0/Include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 example_glfw_vulkan/fast"/>
+					<CompileFile command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/TehnokraT/AppData/Local/Programs/CLion/bin/mingw/bin/mingw32-make.exe -f &quot;D:/Code/Ai_Product_Hackathon/cmake-build-debug/imgui/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx10.cpp">
+			<Option target="example_win32_directx10"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx10.h">
+			<Option target="example_win32_directx10"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx11.cpp">
+			<Option target="example_win32_directx11"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx11.h">
+			<Option target="example_win32_directx11"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx12.cpp">
+			<Option target="example_win32_directx12"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx12.h">
+			<Option target="example_win32_directx12"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx9.cpp">
+			<Option target="example_win32_directx9"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_dx9.h">
+			<Option target="example_win32_directx9"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_glfw.cpp">
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_glfw.h">
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_opengl2.cpp">
+			<Option target="example_glfw_opengl2"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_opengl2.h">
+			<Option target="example_glfw_opengl2"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_opengl3.cpp">
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl3"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_opengl3.h">
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl3"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_vulkan.cpp">
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_vulkan.h">
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_win32.cpp">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/backends/imgui_impl_win32.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_glfw_opengl2/main.cpp">
+			<Option target="example_glfw_opengl2"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_glfw_opengl3/main.cpp">
+			<Option target="example_glfw_opengl3"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_glfw_vulkan/main.cpp">
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_win32_directx10/main.cpp">
+			<Option target="example_win32_directx10"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_win32_directx11/main.cpp">
+			<Option target="example_win32_directx11"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_win32_directx12/main.cpp">
+			<Option target="example_win32_directx12"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_win32_directx9/main.cpp">
+			<Option target="example_win32_directx9"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/examples/example_win32_opengl3/main.cpp">
+			<Option target="example_win32_opengl3"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imconfig.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imgui.cpp">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imgui.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imgui_demo.cpp">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imgui_draw.cpp">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imgui_internal.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imgui_tables.cpp">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imgui_widgets.cpp">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imstb_rectpack.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imstb_textedit.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/imstb_truetype.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/misc/freetype/imgui_freetype.cpp">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/misc/freetype/imgui_freetype.h">
+			<Option target="example_win32_directx9"/>
+			<Option target="example_win32_directx10"/>
+			<Option target="example_win32_directx11"/>
+			<Option target="example_win32_directx12"/>
+			<Option target="example_win32_opengl3"/>
+			<Option target="example_glfw_opengl2"/>
+			<Option target="example_glfw_opengl3"/>
+			<Option target="example_glfw_vulkan"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\scripts\buildsystems\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glew/CopyImportedTargetProperties.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glew\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glew/glew-config.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glew\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glew/glew-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glew\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glew/glew-targets-release.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glew\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glew/glew-targets.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glew\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glew/vcpkg-cmake-wrapper.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glew\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Config.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-debug.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets-release.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/glfw3/glfw3Targets.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\glfw3\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/freetype/freetype-config-version.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\freetype\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/freetype/freetype-config.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\freetype\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/freetype/freetype-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\freetype\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/freetype/freetype-targets-release.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\freetype\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/freetype/freetype-targets.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\freetype\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/freetype/vcpkg-cmake-wrapper.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\freetype\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/Users/TehnokraT/.vcpkg-clion/vcpkg/installed/x64-windows/share/zlib/vcpkg-cmake-wrapper.cmake">
+			<Option virtualFolder="CMake Files\Users\TehnokraT\.vcpkg-clion\vcpkg\installed\x64-windows\share\zlib\"/>
+		</Unit>
+		<Unit filename="D:/Code/Ai_Product_Hackathon/imgui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\imgui\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

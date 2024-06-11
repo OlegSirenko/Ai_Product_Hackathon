@@ -43,6 +43,7 @@ void ControlPanel::Render() {
                 else
                     ImGui::NewLine();  // move to next line after every 3 images
             }
+            current_item_texture = textures.front();
         }
         ImGui::EndChild();
     }

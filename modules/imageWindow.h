@@ -13,8 +13,10 @@
 class ImageWindow {
 public:
     void Render();
+    void LoadTexturesFromDirectory(const std::string &directoryPath);
 private:
-    ImTextureID current_scene_texture = ImageProcessor::GetTexture("/home/tehnokrat/Ai_Product_Hackathon/cmake-build-debug/scenes/2024_06_05_0k3_Kleki 1.png");
+    ImTextureID current_scene_texture;
+    std::vector<ImTextureID> textures;
 };
 
 

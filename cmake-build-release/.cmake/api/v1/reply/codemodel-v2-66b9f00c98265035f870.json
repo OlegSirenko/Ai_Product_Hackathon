@@ -1,0 +1,165 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.28"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "imgui",
+					"jsonFile" : "directory-imgui-Release-604fb254dcdaaa3822f3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "imgui",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Ai_Product_Hackathon",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "imgui",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Ai_Product_Hackathon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Ai_Product_Hackathon-Release-067e7b712296ee4b6ba0.json",
+					"name" : "Ai_Product_Hackathon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_glfw_opengl2::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_glfw_opengl2-Release-7cac3694d7d824d90cae.json",
+					"name" : "example_glfw_opengl2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_glfw_opengl3::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_glfw_opengl3-Release-b08df8e8407ebb79230e.json",
+					"name" : "example_glfw_opengl3",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_glfw_vulkan::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_glfw_vulkan-Release-083bc502308113e16090.json",
+					"name" : "example_glfw_vulkan",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_win32_directx10::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_win32_directx10-Release-3f3df527bd9d026ad338.json",
+					"name" : "example_win32_directx10",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_win32_directx11::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_win32_directx11-Release-7034cde20f7d6aa02ab5.json",
+					"name" : "example_win32_directx11",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_win32_directx12::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_win32_directx12-Release-8775ea30c2d573406230.json",
+					"name" : "example_win32_directx12",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_win32_directx9::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_win32_directx9-Release-7810cecfde041e8a5b7b.json",
+					"name" : "example_win32_directx9",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "example_win32_opengl3::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-example_win32_opengl3-Release-db75e1096a9ce5ac3855.json",
+					"name" : "example_win32_opengl3",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Code/Ai_Product_Hackathon/cmake-build-release",
+		"source" : "D:/Code/Ai_Product_Hackathon"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
